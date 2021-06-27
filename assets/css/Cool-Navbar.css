@@ -1,6 +1,6 @@
 .navbar {
   padding: 15px;
-  border-bottom: 1px solid rgb(245,245,245);
+  /*border-bottom: 1px solid rgb(245,245,245);*/
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
