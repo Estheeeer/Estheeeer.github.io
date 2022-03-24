@@ -1,0 +1,67 @@
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.line-down-text {
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-left: 12px;
+}
+
+.footer-part {
+  color: #2c3c2d;
+  white-space: nowrap;
+  margin: 0 20px;
+  padding-top: 4px;
+}
+
+.footer-parts {
+  color: #2c3c2d;
+  white-space: nowrap;
+  margin: 0 20px;
+}
+
+.footer-parts:hover {
+  color: #b7bba0;
+  text-decoration: none;
+}
+
+.footer-line {
+  width: 100%;
+  border-top: 0.5px solid #b7bba0;
+}
+
+.footer-parts.mail-telefon {
+  padding-top: 4px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-dn {
+    display: none;
+  }
+}
+
+.fm-abstand {
+  padding-left: 130px;
+}
+
+@media (min-width: 768px) {
+  .footer-mobile {
+    display: none;
+  }
+}
+
