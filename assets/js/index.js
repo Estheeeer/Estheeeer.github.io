@@ -10,4 +10,4 @@ document.onreadystatechange = function() {
                 document.querySelector(
                   "body").style.visibility = "visible";
             }
-        };
+};
