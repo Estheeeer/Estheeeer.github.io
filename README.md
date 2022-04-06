@@ -1,4 +1,4 @@
-# Hello, this is the personal website of Esther. ;) 
+### 👾 Hi, this is the personal website of Esther. ;) 
 
 The entire estherzhang.com Web site is Copyright ©2022 by Esther Zhang. All Rights Reserved. The estherzhang.com site may not be copied or duplicated in whole or part by any means without express prior agreement in writing or unless specifically noted on the site.
 
