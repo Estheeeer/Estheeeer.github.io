@@ -55,7 +55,7 @@ projects.forEach(project => {
   const projectEl = document.createElement('a');
   projectEl.classList.add('project');
   projectEl.href = project.link;
-  projectEl.target = '_blank';
+  // projectEl.target = '_blank';
 
   projectEl.innerHTML = `
         <img src="${imgURL}" alt="${title}"/>
