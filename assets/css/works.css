@@ -1,0 +1,51 @@
+.competencesicons {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+
+.competencestitles {
+  font-size: 27px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.squareicons {
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.competencesparagraph {
+  font-size: 13px;
+  max-width: 280px;
+  margin: auto;
+}
+
+.competencesboxes {
+  border: 1px solid gray;
+  transition: 0.5s;
+}
+
+.competencesboxes:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid #5a5d60;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 991px) {
+  .competencestitles {
+    font-size: 20px;
+  }
+}
+
+.works_row {
+  margin-top: calc(-2 * var(--bs-gutter-y));
+  margin-right: calc(-9 * var(--bs-gutter-x));
+  margin-left: calc(-10 * var(--bs-gutter-x));
+}
+
+
