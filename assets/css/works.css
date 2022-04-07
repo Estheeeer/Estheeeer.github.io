@@ -1,85 +1,66 @@
-body{
-    background:#eee;
-    margin-top:20px;}
-.card-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-.card-wrapper .card-img {
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-out;
-}
-.card-wrapper .card-img img {
-    transition: all 0.3s ease-in-out;
-    border-radius: 0.25rem;
-    border-radius: 0.25rem;
-}
-.card-wrapper .card-body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    visibility: hidden;
-    padding: 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.25rem;
-    transform: translateX(-100%);
-    transition: 0.8s;
-    z-index: 11;
-}
-.card-wrapper:before {
-    content: "";
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    right: 100%;
-    z-index: 9;
-    transition: 0.8s;
-    background: rgba(0, 186, 238, 0.82);
-    border-radius: 0.25rem;
-}
-.card-wrapper:hover:before {
-    right: 0;
-}
-.card-wrapper h3,
-.card-wrapper p {
-    color: #fff;
-}
-.card-wrapper .read-more {
-    color: #fff;
-}
-.card-wrapper .read-more:after {
-    color: #fff;
-}
-.card-wrapper:hover .card-body {
-    visibility: visible;
-    transform: translateX(0px);
-}
-.card-wrapper:hover .backgound-color {
-    right: 0;
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.mb-1-9, .my-1-9 {
-    margin-bottom: 1.9rem;
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 50px;
 }
-@media (min-width: 992px){
-.mb-lg-0, .my-lg-0 {
-    margin-bottom: 0 !important;
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 1020px;
 }
+
+.project {
+  border-radius: 5px;
+  color: #333;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  width: 300px;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
-.read-more:after {
-    content: '\f0a9';
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 600;
-    padding-left: 8px;
-    font-weight: 900;
-    color: #00baee;
-    vertical-align: middle;
+
+.project:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.project img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.floating-text {
+  background-color: #001F61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: 'Muli';
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-text a {
+  color: #FF7500;
+  text-decoration: none;
 }
