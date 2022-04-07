@@ -43,7 +43,7 @@ body {
 
 .container-fluid {
   width: 30vw;
-  margin: auto 35vw;
+  margin: 0 auto;
   font-weight: 150;
 }
 
