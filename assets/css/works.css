@@ -1,51 +1,85 @@
-.competencesicons {
-  font-size: 30px;
-  margin-top: 30px;
+body{
+    background:#eee;
+    margin-top:20px;}
+.card-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.card-wrapper .card-img {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+.card-wrapper .card-img img {
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.25rem;
+    border-radius: 0.25rem;
+}
+.card-wrapper .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    transform: translateX(-100%);
+    transition: 0.8s;
+    z-index: 11;
+}
+.card-wrapper:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    z-index: 9;
+    transition: 0.8s;
+    background: rgba(0, 186, 238, 0.82);
+    border-radius: 0.25rem;
+}
+.card-wrapper:hover:before {
+    right: 0;
+}
+.card-wrapper h3,
+.card-wrapper p {
+    color: #fff;
+}
+.card-wrapper .read-more {
+    color: #fff;
+}
+.card-wrapper .read-more:after {
+    color: #fff;
+}
+.card-wrapper:hover .card-body {
+    visibility: visible;
+    transform: translateX(0px);
+}
+.card-wrapper:hover .backgound-color {
+    right: 0;
 }
 
-.competencestitles {
-  font-size: 27px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.mb-1-9, .my-1-9 {
+    margin-bottom: 1.9rem;
 }
-
-.squareicons {
-  font-size: 13px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+@media (min-width: 992px){
+.mb-lg-0, .my-lg-0 {
+    margin-bottom: 0 !important;
 }
-
-.competencesparagraph {
-  font-size: 13px;
-  max-width: 280px;
-  margin: auto;
 }
-
-.competencesboxes {
-  border: 1px solid gray;
-  transition: 0.5s;
+.read-more:after {
+    content: '\f0a9';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 600;
+    padding-left: 8px;
+    font-weight: 900;
+    color: #00baee;
+    vertical-align: middle;
 }
-
-.competencesboxes:hover {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  animation-name: example;
-  animation-duration: 0.25s;
-  border-left: 8px solid #5a5d60;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-@media (max-width: 991px) {
-  .competencestitles {
-    font-size: 20px;
-  }
-}
-
-.works_row {
-  margin-top: calc(-2 * var(--bs-gutter-y));
-  margin-right: calc(-9 * var(--bs-gutter-x));
-  margin-left: calc(-10 * var(--bs-gutter-x));
-  padding-top: 50px;
-}
-
-
