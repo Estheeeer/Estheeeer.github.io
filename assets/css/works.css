@@ -3,7 +3,6 @@
   margin-top: 30px;
 }
 
-
 .competencestitles {
   font-size: 27px;
   margin-top: 10px;
@@ -46,6 +45,7 @@
   margin-top: calc(-2 * var(--bs-gutter-y));
   margin-right: calc(-9 * var(--bs-gutter-x));
   margin-left: calc(-10 * var(--bs-gutter-x));
+  padding-top: 50px;
 }
 
 
