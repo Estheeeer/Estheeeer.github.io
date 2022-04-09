@@ -44,7 +44,7 @@ const projects = [
   {
 
 const app = document.getElementById('app');
-const imgBaseURL = 'https://www.florin-pop.com/images/100Days100PRojects/Day ';
+// const imgBaseURL = 'https://www.florin-pop.com/images/100Days100PRojects/Day ';
 
 projects.forEach(project => {
   // const title = `${project.name} - #${project.nr}`;
