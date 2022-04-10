@@ -1,66 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
-
-* {
-  box-sizing: border-box;
+#about {
+    background-color: rgb(92,184,92);
+    text-align: center;
+    color: white;
+    margin: 0px 0 20px 0;
+    padding: 50px;
 }
-
-#app {
-  font-family: 'Muli', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 0 50px;
+#portfolio {
+  background-color: #00b33c;
+    text-align: center;
+    color: white;
+    margin: 0px 0 20px 0;
+    padding: 20px;
 }
-
-#app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  width: 1020px;
+#contact{
+    background-color: rgb(0, 102, 34);
+    text-align: center;
+    color: white;
+    margin: 0px 0 20px 0;
+    padding: 50px;
 }
-
-.project {
-  border-radius: 5px;
-  color: #333;
-  display: flex;
-  font-size: 18px;
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+.myNavbar{
+  background-color: rgb(0, 230, 138);
   font-weight: bold;
-  flex-direction: column;
-  text-align: center;
-  margin: 20px;
-  width: 300px;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.project:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
-}
-
-.project img {
-  border-radius: 5px;
-  max-width: 100%;
-}
-
-.floating-text {
-  background-color: #001F61;
-  border-radius: 10px 10px 0 0;
-  color: #fff;
-  font-family: 'Muli';
-  padding: 7px 15px;
+  color: white !important;
   position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 998;
+  z-index: 1000;
+  width: 100%;
+}
+.nav{
+    background-color: rgb(0, 230, 138);
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
 }
 
-.floating-text a {
-  color: #FF7500;
-  text-decoration: none;
+body { 
+  padding-bottom: 70px;
 }
