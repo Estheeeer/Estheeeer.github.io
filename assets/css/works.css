@@ -9,7 +9,7 @@
     padding: 20px;
 }
 
-img {
+.project-image {
   height: auto; 
   width: auto; 
   max-width: 300px; 
