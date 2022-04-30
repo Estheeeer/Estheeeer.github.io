@@ -38,13 +38,12 @@
 
 @media (max-width:767px) {
   .projects-horizontal .item {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
     min-height: 160px;
   }
 }
 
 .projects-horizontal .item .name {
-  /*font-size: 18px;*/
   font-size: calc(4px + 1vw);
   font-weight: 250;
   margin-top: 10px;
@@ -59,8 +58,7 @@
 }
 
 .projects-horizontal .item .description {
-  font-size: 15px;
-  font-size: calc(4px + 1vw)
+  font-size: calc(4px + 0.7vw);
   margin-bottom: 0;
 }
 
