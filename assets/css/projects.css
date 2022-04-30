@@ -20,14 +20,10 @@
   .projects-horizontal h2 {
     margin-bottom: 25px;
     padding-top: 25px;
-    font-size: 24px;
-  }
-}
+    /*font-size: 24px;*/
+    font-size: calc(5px + 1vw)
 
-.projects-horizontal .intro {
-  font-size: 16px;
-  max-width: 500px;
-  margin: 0 auto 10px;
+  }
 }
 
 .projects-horizontal .projects {
@@ -47,7 +43,8 @@
 }
 
 .projects-horizontal .item .name {
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: calc(4px + 1vw)
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -61,7 +58,7 @@
 }
 
 .projects-horizontal .item .description {
-  /*font-size: 15px;*/
+  font-size: 15px;
   font-size: calc(4px + 1vw)
   margin-bottom: 0;
 }
