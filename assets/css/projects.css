@@ -46,7 +46,7 @@
 .projects-horizontal .item .name {
   /*font-size: 18px;*/
   font-size: calc(4px + 1vw);
-  font-weight: bold;
+  font-weight: 250;
   margin-top: 10px;
   margin-bottom: 15px;
   color: inherit;
