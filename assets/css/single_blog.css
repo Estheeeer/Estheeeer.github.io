@@ -1,0 +1,136 @@
+.article-dual-column {
+  color: #56585b;
+  background-color: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,"Sans Serif",Icons;
+  /* font-family: proxima-soft, sans-serif; */
+  /* font-style: thin; */
+}
+
+.article-dual-column .intro {
+  font-size: 16px;
+  margin: 0 auto 30px;
+}
+
+.article-dual-column .intro h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  line-height: 1.5;
+  color: inherit;
+  margin-top: 25px;
+  font-weight: 300;
+  color: black;
+}
+
+.article-dual-column .intro p {
+  color: #929292;
+  font-size: 13px;
+}
+
+.article-dual-column .intro p .by {
+  font-style: italic;
+}
+
+.article-dual-column .intro p .date {
+  text-transform: uppercase;
+  padding: 4px 0 4px 10px;
+  margin-left: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.article-dual-column #intro-text {
+  font-size: 16px;
+  font-weight: 300;
+  word-spacing: 0.35rem;
+}
+
+.article-dual-column .intro p a {
+  color: #333;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.article-dual-column .intro img {
+  margin-top: 25px;
+}
+
+
+
+.article-dual-column .text p {
+  margin-bottom: 20px;
+  line-height: 1.45;
+
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text p {
+    font-size: 16px;
+    font-weight: 200;
+    word-spacing: 0.35rem;
+    text-align: justify;
+  }
+}
+
+.article-dual-column .text h2 {
+  margin-top: 28px;
+  margin-bottom: 20px;
+  line-height: 1.45;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text h2 {
+    font-size: 20px;
+  }
+}
+
+.article-dual-column .text figure {
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.article-dual-column .text figure img {
+  margin-bottom: 12px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+@media (max-width:767px) {
+  .article-dual-column .toc {
+    border: 1px solid #d3d3d3;
+    padding: 20px 0 15px;
+    margin-bottom: 20px;
+    border-width: 1px 0;
+  }
+}
+
+ul{
+  list-style-type: circle;
+}
+
+.article-dual-column .toc p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 5vh;
+}
+
+.article-dual-column .toc ul {
+  padding-left: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.article-dual-column .toc li {
+  padding: 2px 0;
+}
+
+.article-dual-column .toc a {
+  color: inherit;
+}
+
