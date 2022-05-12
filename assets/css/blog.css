@@ -108,4 +108,5 @@ dt::before {
 dd {
 	margin-left: 5.5vw;
 	margin-bottom: 3vh;
+    font-family: var(--count-font-family);
 }
