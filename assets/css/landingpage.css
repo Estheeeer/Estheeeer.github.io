@@ -196,7 +196,7 @@ li:nth-child(1):hover::before {
     padding-right: 25%;
   }
   .category figure {
-      font-size: 1.25em;
+    font-size: 1.25em;
   }
   .category figure img {
       height: 115px;
