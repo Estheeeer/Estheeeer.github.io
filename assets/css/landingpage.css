@@ -248,12 +248,10 @@ opacity: 1;
   }
 }
 
-
-
-.flex-center {
-    position: relative;
+.category contact .contact-block{
+    /* position: relative; */
     font-size: 0.7em;
-    height:100%
+    height:100%;
     /* width: 100%; */
     min-height: 15vh;
     background: transparent;
