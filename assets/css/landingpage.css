@@ -108,14 +108,14 @@ li:nth-child(1):hover::before {
       -webkit-text-fill-color: transparent;
       z-index: -1;
   }
-	li:nth-child(7):hover::before {
+	/* li:nth-child(7):hover::before {
       content: attr(data-menu);
       position: absolute;
       background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbr1NT/orNnM4I5MAAASUUEBHf1/LwAAAAASUVORK5CYII=");
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: -1;
-  }
+  } */
   a {
     color: transparent;
   }
@@ -134,7 +134,6 @@ li:nth-child(1):hover::before {
     border-bottom: 1px solid black;
     text-transform: uppercase;
 }
-
 
 .category {
   position: absolute;
@@ -172,7 +171,7 @@ li:nth-child(1):hover::before {
   } */
 
 
-  @for $i from 1 through 4 {
+  @for $i from 1 through 6 {
     .show figure:nth-child({$i}) { 
       transition-delay: $i * .12s;
     }
