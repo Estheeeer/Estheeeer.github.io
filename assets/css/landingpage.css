@@ -122,14 +122,15 @@ li:nth-child(6):hover::before {
     -webkit-text-fill-color: transparent;
     z-index: -1;
 }
-/* li:nth-child(7):hover::before {
+li:nth-child(7):hover::before {
     content: attr(data-menu);
     position: absolute;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbr1NT/orNnM4I5MAAASUUEBHf1/LwAAAAASUVORK5CYII=");
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: -1;
-} */
+}
 a {
   color: transparent;
 }
@@ -248,8 +249,8 @@ opacity: 1;
   }
 }
 
-.category contact .contact-block{
-    /* position: relative; */
+.contact-block{
+    position:relative;
     font-size: 0.7em;
     height:100%;
     /* width: 100%; */
@@ -259,14 +260,15 @@ opacity: 1;
     display: -webkit-flex;
     display: -ms-flexbox;*/
     display: flex; 
-    /* -webkit-box-pack: center;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center; */
-    /* align-items: right; */
+    -ms-flex-align: center;
+
+    align-items: right;
 }
 
 .icon-3d {
