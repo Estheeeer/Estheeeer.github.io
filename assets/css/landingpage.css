@@ -151,12 +151,12 @@ color: #222;
 }
 
 .category {
-position: absolute;
-left: 0;
-top: 0;
-padding: 3em 50% 0 3em;
-opacity: 0;
-transition: .3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3em 50% 0 3em;
+  opacity: 0;
+  transition: .3s;
 }
 .category figure {
   opacity: 0;
@@ -249,36 +249,36 @@ opacity: 1;
   }
 }
 
-.contact-block{
+.category .contact-block{
     position:relative;
     font-size: 0.7em;
     height:100%;
-    /* width: 100%; */
-    min-height: 15vh;
+    width: 5%;
+    min-height: 5vh;
     background: transparent;
     /* display: -webkit-box;
     display: -webkit-flex;
-    display: -ms-flexbox;*/
+    display: -ms-flexbox; */
     display: flex; 
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: right;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: left;
+    -webkit-align-items: left;
+    -ms-flex-align: left;
+    align-items: left;
 }
 
 .icon-3d {
-  padding: 5px;
-  -webkit-animation: icon3d 200ms 10;
-  animation: icon3d 200ms 10;
+  padding: 10px;
+  -webkit-animation: icon3d 300ms 10;
+  animation: icon3d 300ms 10;
   color:rgb(152, 152, 152);
 }
 .icon-3d:hover {
-  -webkit-animation: icon3d 200ms infinite;
-  animation: icon3d 200ms infinite;
+  -webkit-animation: icon3d 300ms infinite;
+  animation: icon3d 300ms infinite;
 }
 
 
@@ -299,4 +299,3 @@ opacity: 1;
     text-shadow: -5px 0 var(--redColor), 5px -4px var(--blueColor);
   }
 }
-
