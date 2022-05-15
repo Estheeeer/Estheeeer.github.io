@@ -14,9 +14,8 @@
   
   Menu.prototype.initialState = function(){
     var i = 0,
-        $img = $('.category').eq(0).find('img');
-    
-    $img.load(function(){
+    $img = $('.category').eq(0).find('iframe');      
+    $img.on('load', function(){
       i++;
       //wait for all images to load
       if (i === $img.length) {
