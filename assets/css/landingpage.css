@@ -89,11 +89,10 @@ li:nth-child(2):hover::before {
   -webkit-text-fill-color: transparent;
   z-index: -1;
 }
-
 li:nth-child(3):hover::before {
   content: attr(data-menu);
   position: absolute;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIHbGpGf/Z+RJMYI5MAAASfEEBPPbldMAAAAASUVORK5CYII=");
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbmWb7/fdM2M4I5MAAASNkEBEaKR7gAAAAASUVORK5CYII=");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,7 +102,7 @@ li:nth-child(3):hover::before {
 li:nth-child(4):hover::before {
   content: attr(data-menu);
   position: absolute;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbmWb7/fdM2M4I5MAAASNkEBEaKR7gAAAAASUVORK5CYII=");
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIHbGpGf/Z+RJMYI5MAAASfEEBPPbldMAAAAASUVORK5CYII=");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -123,22 +122,22 @@ li:nth-child(5):hover::before {
 li:nth-child(6):hover::before {
   content: attr(data-menu);
   position: absolute;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbmWb7/fdM2M4I5MAAASNkEBEaKR7gAAAAASUVORK5CYII=");
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-}
-
-li:nth-child(7):hover::before {
-  content: attr(data-menu);
-  position: absolute;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbr1NT/orNnM4I5MAAASUUEBHf1/LwAAAAASUVORK5CYII=");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: -1;
 }
+
+/* li:nth-child(7):hover::before {
+  content: attr(data-menu);
+  position: absolute;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2NkQAKMIPbmWb7/fdM2M4I5MAAASNkEBEaKR7gAAAAASUVORK5CYII=");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+} */
 
 a {
   color: transparent;
