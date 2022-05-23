@@ -67,10 +67,10 @@ body {
 
 /* list */
 dl {
-    counter-reset: count;
+  counter-reset: count;
 	/* background: var(--dl-gradient-right); */
     
-    /* default is smart phone */
+  /* default is smart phone */
 	padding-left: 4vw; 
 	padding-right: 4vw;
 	margin: 0;
