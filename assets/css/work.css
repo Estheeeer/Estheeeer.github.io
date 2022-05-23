@@ -60,5 +60,12 @@
 .projects-horizontal .item .description {
   font-size: calc(4px + 0.7vw);
   margin-bottom: 0;
+  font-family:'Oswald', cursive;
+  font-weight: 100;
 }
 
+.img-fluid {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
