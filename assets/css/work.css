@@ -29,6 +29,7 @@
 
 .projects-horizontal .projects {
   padding-bottom: 40px;
+  margin-left:100px;
 }
 
 .projects-horizontal .item {
@@ -44,7 +45,8 @@
 }
 
 .projects-horizontal .item .name {
-  font-size: calc(4px + 1vw);
+  /* font-size: calc(5px + 1vw); */
+  font-size:18px;
   font-weight: 250;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -58,7 +60,8 @@
 }
 
 .projects-horizontal .item .description {
-  font-size: calc(4px + 0.7vw);
+  /* font-size: calc(4px + 0.7vw); */
+  font-size:14px;
   margin-bottom: 0;
   font-family:'Oswald', cursive;
   font-weight: 100;
@@ -66,6 +69,6 @@
 
 .img-fluid {
   object-fit: cover;
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
 }
