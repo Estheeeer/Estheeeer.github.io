@@ -208,7 +208,7 @@ a {
 
 /* for i in (1 .. 4)
 figure:nth-child({i}) {
-  transition-delay: i * .12s; 
+  transition-delay: i * 0.12s; 
 } */
 
 
@@ -216,9 +216,8 @@ figure:nth-child({i}) {
   .show figure:nth-child( {
       $i
     }
-
-  ) {
-    transition-delay: $i * .12s;
+  ){
+    transition-delay: $i * 0.12s;
   }
 }
 
@@ -229,7 +228,7 @@ figure:nth-child({i}) {
 .category.show figure {
   opacity: 1;
   left: 0;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 1250px) {
@@ -341,3 +340,4 @@ figure:nth-child({i}) {
     text-shadow: -5px 0 var(--redColor), 5px -4px var(--blueColor);
   }
 }
+
