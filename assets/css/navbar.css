@@ -12,6 +12,7 @@
     --black: #000000;
     --platinum: #eaeaeaff;
     --gray:#808080;
+    --light-gray:rgb(189, 189, 189);
     --cultured: #f3f3f3ff;
     --nero: #444444;
     /* --dl-gradient-right: linear-gradient(90deg, rgba(0,0,0,0.04) 20%, rgba(255,255,255,0) 0%); */
@@ -27,7 +28,7 @@
 
 
 header {
-    font-family: 'Oswald', cursive;
+    font-family: var(--base-font-family);
     padding: 1em 2vw;
     background-color: #ffffff;
     height: 40px;
@@ -46,12 +47,13 @@ header a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  margin:2px 2px;
   /* padding-left: 2px;
   padding-right: 2px; */
 }
 
 #brand a {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .nav ul {
@@ -89,13 +91,13 @@ header a {
   width: 20px;
   height: 1.5px;
   background-color: var(--gray) !important;
-  margin: 2px 0;
+  margin: 2px 6px;
   transition: 0.4s;
 }
 
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-180deg) translate(-1px, 1px);
+  transform: rotate(-180deg) translate(-1px, 1px);
 }
 
 .open .bar2 {
@@ -103,32 +105,53 @@ header a {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
+  opacity: 0;
+}
+
+.open .bar4 {
+  -webkit-transform: rotate(180deg) translate(-1px, -1px);
+  transform: rotate(180deg) translate(-1px, -1px);
 }
 
 .open .mobile-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: flex-start;
+
 }
 
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
-  left: 0;
+  top: 100px;
+  right: 20px;
   height: calc(100vh - 50px);
   width: 100%;
 }
 
+.mobile-menu a{
+  text-decoration: none;
+  color: var(--gray);
+  font-family: var(--base-font-family);
+  font-size: 18px;
+
+}
+
 .mobile-menu li {
+  list-style: none;
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  header nav {
+.mobile-menu li a:hover {
+  /* transform: scale(1.1); */
+  text-decoration: none;
+  transition: 0.3s;
+  color:var(--black)
+}
+
+@media only screen and (max-width: 767px) {
+  header .nav {
     display: none;
   }
 
