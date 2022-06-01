@@ -11,3 +11,6 @@
 //                   "body").style.visibility = "visible";
 //             }
 // };
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

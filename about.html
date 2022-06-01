@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <!-- <link rel="stylesheet" href="assets/css/Navigation-Clean.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
 </head>
 
 <body><div class='text-container'><span id='text'></span><div class='text-underscore' id='console'>&#95;</div></div>
 
-    <nav class="navbar navbar-light navbar-expand-md">
+    <!-- <nav class="navbar navbar-light navbar-expand-md">
         <div class="container-fluid">
             <img id="logoImg" src="assets/img/logo.svg">
             <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
@@ -37,13 +39,42 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+    <header>
+        <div id="brand"><a href="/">&nbsp;&nbsp;&nbsp;<img src="assets/img/logo.svg">&nbsp;</a></div>
+        <nav>
+          <ul>
+            <li><a href="/about">about</a></li>
+            <li><a href="/work">work</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/photography">photography</a></li>
+
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div class="bar4"></div>
+
+          <ul class="mobile-menu">
+            <li><a href="/about">about</a></li>
+            <li><a href="/work">work</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/photography">photography</a></li>
+          </ul>
+        </div>
+    </header>
+
     <div class="row">
         <div class="col"><img id="profile_image" src="assets/img/Me_Bryce_Canyon_National_Park.jpg" alt="Bryce Canyon National Park"></div>
         <div class="col">
-            <p id="introduction" style="text-align: justify;">Esther Zhang (she/her) is an interdisciplinary designer and engineer, with focus in multimedia interaction design and physical computing. She always admires that an exquisite technology and compassionate experience design not only spreads aesthetic values but also positively animates or even creates a new interaction mode.&nbsp; &nbsp;<br><br>Currently, she is a graduate student of the Interactive Telecommunication Program (ITP) at the New York University. Before that, she was formally trained in Electrical and Computer Engineering (ECE) with the concentration in digital image and signal processing and computer science from the University of Washington, Seattle. Her previous academic research and industry experience sharpened her skills and cultivated her interest in interaction design within a more diverse and broader scenarios. She also enjoys analog photography and fabrication.<br><br>Fun fact:<br>flat white ☕️<br>cats&nbsp; 🐈🐈‍⬛<br>hiking 🏔️<br></p>
+            <p id="introduction" style="text-align: left;">Esther Zhang (she/her) is an interdisciplinary designer and engineer, with focus in multimedia interaction design and physical computing. She always admires that an exquisite technology and compassionate experience design not only spreads aesthetic values but also positively animates or even creates a new interaction mode.&nbsp; &nbsp;<br><br>Currently, she is a graduate student of the Interactive Telecommunication Program (ITP) at the New York University. Before that, she was formally trained in Electrical and Computer Engineering (ECE) with the concentration in digital image and signal processing and computer science from the University of Washington, Seattle. Her previous academic research and industry experience sharpened her skills and cultivated her interest in interaction design within a more diverse and broader scenarios. She also enjoys analog photography and fabrication.<br><br>Fun fact:<br>flat white ☕️<br>cats&nbsp; 🐈🐈‍⬛<br>hiking 🏔️<br></p>
         </div>
     </div>
+
+
 
     <footer class="footer-basic">
         <div class="social"><a href="https://www.instagram.com/esthee__er/?hl=en" style="border-style: none;"><i class="icon ion-social-instagram-outline"></i></a><a href="https://github.com/Estheeeer" style="border-style: none;"><i class="icon ion-social-github-outline"></i></a><a href="#" style="border-style: none;"><i class="icon ion-social-linkedin-outline"></i></a></div>
