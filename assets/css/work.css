@@ -13,14 +13,14 @@
 }
 
 .all-projects {
+    box-sizing: border-box;
     background-color: var(--section-bg-color);
-    margin-top: 1.5rem;    
+    margin-top: 2rem; 
+    width:70%;
+    margin-left: 25vw;
+    margin-right: 0vw;   
 }
 
-.all-projects {
-    box-sizing: border-box;
-  }
-    
   .col {
     float: left;
     width: 50%;
