@@ -27,9 +27,14 @@ body {
   bottom: 0;
 }
 
-#logoImg {
+/* #logoImg {
   min-width: 150px;
   max-width: 5vw;
+} */
+
+.nav img {
+  height: auto;
+  width: 2vw;
 }
 
 .container-fluid {
@@ -46,7 +51,7 @@ body {
 .main-intro #profile-image {
   object-fit: cover;
   max-height: 400px;
-  max-width: 95vw;
+  max-width: 45vw;
   background-color: white;
 }
 
@@ -68,6 +73,7 @@ body {
   margin-right: 2vw;   
   padding-top: 4vh;
   box-sizing: border-box;
+
 }
 
 .row:after {
@@ -86,10 +92,38 @@ body {
   font-weight: 150;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px)  and (min-width:320px) {
   .col {
     width: 90%;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
   }
+  .nav img {
+    height: auto;
+    width: 1.5vw;
+  }
 }
+
+@media (max-width: 319px) {
+  .main-intro {
+    min-width: 319px;
+  }
+  .col {
+    width: 90%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .main-intro #profile-image {
+    object-fit: cover;
+    min-width: 50%;
+    max-width: 45vw;
+    background-color: white;
+  }
+
+  .nav img {
+    height: auto;
+    min-width: 1.5vw;
+  }
+}
+
