@@ -30,12 +30,12 @@ body {
 #logoImg {
   min-width: 150px;
   max-width: 5vw;
-}
+} 
 
-.nav img {
+/* .nav img {
   height: auto;
-  width: 2vw;
-}
+  width: 20px;
+} */
 
 .container-fluid {
   width: 20vw;
