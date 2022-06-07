@@ -14,10 +14,9 @@ body {
   /* font-size: 1.7rem; */
   margin-top: 1.7em;
   margin-left: auto;
-
-  font-weight: 250;
   margin-right: auto;
   font-size: calc(10px + 1vw);
+  font-weight: 250;
 }
 
 .text-underscore {
@@ -27,15 +26,16 @@ body {
   bottom: 0;
 }
 
-#logoImg {
+/* #logoImg {
   min-width: 150px;
   max-width: 5vw;
-} 
+}  */
 
 /* .nav img {
   height: auto;
   width: 20px;
 } */
+
 
 .container-fluid {
   width: 20vw;
@@ -68,13 +68,12 @@ body {
   max-width: 98%;
 }
 
-.main-intro {
+.main-intro-body {
   width:95%;
   margin-left: 2vw;
   margin-right: 2vw;   
   padding-top: 4vh;
   box-sizing: border-box;
-
 }
 
 .row:after {
