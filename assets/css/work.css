@@ -16,14 +16,14 @@
     box-sizing: border-box;
     background-color: var(--section-bg-color);
     margin-top: 2rem; 
-    width:70%;
+    /* width:70%; */
     margin-left: 25vw;
     margin-right: 0vw;   
 }
 
   .col {
     float: left;
-    width: 50%;
+    /* width: 50%; */
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -44,10 +44,10 @@
     }
   }
 
-
 .row-projects img {
     object-fit: cover;
-    max-height: 400px;
+    aspect-ratio: 400 / 300;
+    max-height: 300px;
     background-color: white;
     float: right;
 }
@@ -89,7 +89,6 @@
     font-weight: 100;
   }
   
-
 .img-fluid {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -102,5 +101,4 @@
     -webkit-filter: grayscale(0%);
     filter: none;
     transition: 1s ease;
-
 }
