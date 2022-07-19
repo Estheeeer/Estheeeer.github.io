@@ -51,9 +51,10 @@ body {
 
 .main-intro #profile-image {
   object-fit: cover;
-  /* max-height: 400px; */
-  max-height: 400px;
-  max-width: 45vw;
+  /* max-height: 400px;
+  max-width: 45vw; */
+  max-height: 60vh;
+  max-width: 70vw;
   background-color: white;
 }
 
@@ -70,7 +71,8 @@ body {
 .main-intro-body {
   width:95%;
   /* margin-right: 0vw;    */
-  margin-right: 2vw;   
+  margin-right: 2vw;
+  margin-left: 2vw;   
   padding-top: 4vh;
   box-sizing: border-box;
 }
