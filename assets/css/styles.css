@@ -50,9 +50,6 @@ body {
 
 .main-intro #profile-image {
   object-fit: cover;
-  /* max-height: 400px;
-  max-width: 45vw; */
-  object-fit: cover;
   aspect-ratio: 300 / 400;
   max-height: 70vh;
   background-color: white;
