@@ -253,7 +253,7 @@ figure:nth-child({i}) {
 
   .category figure img {
     height: 115px;
-    width: 115px;
+    /* width: 115px; */
   }
 }
 
