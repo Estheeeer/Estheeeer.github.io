@@ -113,6 +113,8 @@
     padding: 20px 0 15px;
     margin-bottom: 20px;
     border-width: 1px 0;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 
   .article-dual-column p{
