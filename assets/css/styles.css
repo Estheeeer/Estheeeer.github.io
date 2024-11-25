@@ -121,4 +121,15 @@ body {
   } */
   
   .col {
-    width: 95
+    width: 95%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .main-intro #profile-image {
+    object-fit: cover;
+    min-height: 180px;
+    background-color: white;
+  }
+}
+
