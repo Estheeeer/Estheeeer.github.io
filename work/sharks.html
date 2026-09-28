@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>hello esther</title>
+    <title>Sharks — UI/UX &amp; Interaction Design | Esther Zhang</title>
+    <meta name="description" content="Esther Zhang’s Sharks case study: an educational exploration game shaped through UI/UX design, interaction design, visual details and creative coding.">
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.svg">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -12,20 +13,63 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="/assets/css/Article-Dual-Column.css">
-    <link rel="stylesheet" href="/assets/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css">
     <link rel="stylesheet" href="/assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/Projects-Horizontal.css">
     <link rel="stylesheet" href="/assets/css/Responsive-Image-Grid.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/single_project.css">
 
+    <style>
+        /* Page-only image arrangements; shared fonts and article columns stay intact. */
+        .text-container { max-width: calc(100% - 24px); }
+        .article-container { padding-inline: 12px; }
+        .sharks-case-study img { height: auto; }
+        .sharks-case-study h2 { scroll-margin-top: 24px; }
+        .sharks-screen-pair { display: flex; gap: 24px; align-items: flex-start; }
+        .sharks-screen-pair figure { flex: 1; min-width: 0; }
+        .sharks-single-phone img { width: 280px; max-width: 100%; }
+        .sharks-case-study h3 { margin: 28px 0 14px; font-size: 18px; font-weight: 400; }
+        .sharks-case-study strong { font-weight: 500; }
+        .sharks-flow { display: flex; flex-wrap: wrap; list-style: none; padding: 0; gap: 8px; margin: 24px 0; }
+        .sharks-flow li { padding: 10px 14px; border: 1px solid #d9e2e7; font-size: 14px; line-height: 1.5; }
+        .sharks-flow li:not(:last-child)::after { content: ' →'; color: #52717f; }
+        .sharks-table-wrap { overflow-x: auto; margin: 24px 0 12px; }
+        .sharks-table-wrap:focus-visible { outline: 2px solid #337b9e; outline-offset: 3px; }
+        .sharks-decision-table { border-collapse: collapse; width: 100%; min-width: 610px; font-family: inherit; font-size: 15px; line-height: 1.55; font-weight: 300; }
+        .sharks-decision-table caption { caption-side: top; color: #333; font-size: 14px; font-weight: 400; text-align: left; padding: 0 0 12px; }
+        .sharks-decision-table th, .sharks-decision-table td { padding: 15px; border: 1px solid #d9e2e7; vertical-align: top; text-align: left; }
+        .sharks-decision-table thead th { background: #edf4f7; color: #284858; font-weight: 500; }
+        .sharks-decision-table tbody th { width: 23%; font-weight: 400; }
+        .sharks-decision-table td { width: 38.5%; }
+        .sharks-decision-table tbody tr:nth-child(even) { background: #f8fafb; }
+        .sharks-case-study .sharks-table-note { font-size: 13px; word-spacing: normal; }
+        .sharks-needs { padding-left: 22px; font-size: 16px; line-height: 1.65; font-weight: 300; }
+        .sharks-needs li { margin-bottom: 10px; }
+        .sharks-wireframes { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin: 24px 0; }
+        .sharks-case-study .sharks-wireframes figure { margin: 0; min-width: 0; text-align: left; }
+        .wire-screen { border: 1px solid #777; background: #fafafa; color: #333; padding: 14px; min-height: 300px; display: flex; flex-direction: column; gap: 14px; font-size: 13px; line-height: 1.5; }
+        .wire-box, .wire-action { border: 1px solid #aaa; padding: 9px; }
+        .wire-action { text-align: center; margin-top: auto; background: #e9e9e9; }
+        .wire-choices { display: flex; gap: 6px; }
+        .wire-choices span { flex: 1; border: 1px dashed #aaa; text-align: center; padding: 20px 0; }
+        .wire-bar { display: flex; justify-content: space-between; gap: 8px; border-bottom: 1px solid #aaa; padding-bottom: 8px; }
+        .wire-ocean { flex: 1; min-height: 155px; display: flex; align-items: center; justify-content: space-around; text-align: center; }
+        .wire-reading { display: flex; flex-direction: column; gap: 15px; }
+        .sharks-wireframes figcaption { font-size: 13px; line-height: 1.5; margin-top: 10px; }
+        .sharks-palette { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin: 24px 0; font-size: 13px; }
+        .sharks-palette i { display: block; height: 38px; border: 1px solid #d9e2e7; margin-bottom: 8px; }
+        @media (max-width: 767px) { .sharks-wireframes { grid-template-columns: 1fr; } .wire-screen { min-height: 280px; } .sharks-palette { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+        @media (max-width: 575px) {
+            .article-dual-column p { width: auto; }
+            .sharks-screen-pair { display: block; }
+            .sharks-screen-pair img { width: 280px; max-width: 100%; }
+        }
+    </style>
 </head>
 
 <body><div class='text-container'><span id='text'></span><div class='text-underscore' id='console'>&#95;</div></div>
 
-<script src="animationText.js"></script>
+
 
 <header>
     <div id="brand"><a href="/">&nbsp;&nbsp;&nbsp;<img src="/assets/img/logo.svg">&nbsp;</a></div>
@@ -53,81 +97,103 @@
     </div>
 </header>
 
-    <section class="article-dual-column">
+
+    <section class="article-dual-column" aria-label="Sharks project case study">
         <div class="article-container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <div class="intro">
                         <h2 class="text-center">Sharks</h2>
-                        <p class="text-center">
-                            <span class="by">by</span> 
-                            <a href="#">Esther Zhang</a>
-                            <span class="date">2022</span>
-                        </p>
-                        <p class="text-center">
-                            <span class="blog-link">
-                                <a href="/blog" style="background-color:rgb(152, 206, 250)">[blog]</a>
-                                <a href="https://github.com/datacomma/meetsharks" style="background-color:rgb(152, 206, 250)">[code]</a>
-                            </span>
-                        </p>
-
+                        <p class="text-center"><span class="by">by</span> <a href="/about">Esther Zhang</a><span class="date">2022 · Refined 2026</span></p>
+                        <p class="text-center"><span class="blog-link">
+                            <a href="https://meetsharks.com/" style="background-color:rgb(152, 206, 250)">[play the game]</a>
+                            <a href="https://github.com/datacomma/meetsharks" style="background-color:rgb(152, 206, 250)">[code]</a>
+                        </span></p>
                     </div>
-                    <div id="intro-text">
-                        <p style="text-align:center"><em><strong>Sharks</strong></em> is an interactive game, both mobile and web friendly, aiming to share facts and knowledge of sharks with the public through joyful experience.</p>
-                    </div>
+                    <div id="intro-text"><p style="text-align:center"><em><strong>Sharks!</strong></em> is an educational exploring game, turning shark facts into playful web and mobile interactions.</p></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 col-lg-3 offset-md-1">
-                    <div class="toc">
+                    <nav class="toc" aria-label="Case study sections">
                         <p>Highlights</p>
                         <ul>
-                            <li><a href="#">uiux Design</a></li>
-                            <li><a href="#">cross platform</a></li>
-                            <li><a href="#">interactive</a></li>
+                            <li><a href="#">UIUX</a> </li>
+                            <li><a href="#">Game Dev</a></li>
+                            <li><a href="#">Interaction Design</a> </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div class="col-md-10 col-lg-7 offset-md-1 offset-lg-0">
-                    <div class="text">
-                    </br>
-                        <p><img style="width: 20px; height:auto;" src="https://www.dropbox.com/s/u1qp6ks2qg41scl/game_play_icon.png?raw=1"> play it here: <a href="https://meetsharks.com/">https://meetsharks.com/</a></p>
+                    <div class="text sharks-case-study">
 
-                        <h2>Abstract</h2>
+<h2 id="overview">Sharks, at a glance</h2>
+<p>Sharks is an educational exploration game that invites people to learn facts about sharks through playable experience. Players choose a character, swim through an illustrated ocean and discover 18 short facts inside fluffy white bubbles. Flags preserve those discoveries, while environmental encounters introduce marine habitats and pollution. The intention of the game is to give people a friendly way into a subject they might associate with fear.</p>
+<figure class="figure "><img class="figure-img" src="/assets/img/sharks_new/landing.png" width="2049" height="1152" alt="Sharks landing page with Jack and a Choose your shark action" loading="lazy" decoding="async"><figcaption class="figure-caption">The refined landing screen.</figcaption></figure>
 
-                        <p><em><strong>Sharks</strong></em> is an interactive educational game which aims to convey interesting facts and common knowledge about this ancient species to the public. In this relaxing and scavenger hunt game, people are able to use either mouse (desktop) or touchscreen interface to select the main character and control its movement to start the adventure. In the game, several knowledge spots are scattered over the entire ocean, which will unveil one fact of the shark when it is touched by the main character. Besides that, there are also some relics and trash cans that will unveil some facts and knowledge about the ecosystem under the immense ocean as well as the significant issues related to pollution.</p>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/ftwqurqptn1wgcl/sharks.gif?raw=1">
-                            <figcaption class="figure-caption">game demo video</figcaption>
-                        </figure>
+<h2 id="context">01 · Problem and user needs</h2>
+<p>Visiting shark exhibitions made me reconsider the fear I had associated with sharks. I wanted to create a game that encouraged people to approach them with the same curiosity I felt during those visits.</p>
+<p>When revisiting the original game, I noticed that the experience did not always support that intention. The shark could be difficult to locate on a phone, facts were hard to read, and touch gestures sometimes triggered more than one action. I focused the refinement on making exploration easier to follow, so players could spend more attention on what they discovered.</p>
+<p><strong>The design question:</strong> how could players explore at their own pace while understanding where they were, how to move and what they had found?</p>
+<p>I had casual players with little prior shark knowledge in mind. Reviewing the prototype helped me identify three priorities for their experience. These were starting assumptions to guide the design, rather than findings from user interviews:</p>
+<ul class="sharks-needs"><li><strong>Know where I am.</strong> Find my character and follow its movement.</li><li><strong>Feel in control.</strong> Move and stop when I expect to, including after reading a fact.</li><li><strong>Understand what I found.</strong> Read a fact comfortably and know how to find it again.</li></ul>
 
-                        <h2>Context</h2>
-                        <p>The sharks are a special exhibition and knowledge collation at several museums, such as American Museum of Natural History, New York Aquarium and Smithsonian Institution's National Museum of Natural History and Ocean Portal development.</p>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/oytd9y3xvlqzee1/amnh-sharks-1.jpeg?raw=1">
-                            <figcaption class="figure-caption">sharks exhibition at AMHN</figcaption>
-                        </figure>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/r3cu33twhr8inqi/NY-Aquarium-Shark-Exhibit.jpeg?raw=1">
-                            <figcaption class="figure-caption">sharks exhibition at NY aquarium</figcaption>
-                        </figure>
-                        <p>I visited some of them in person and obtained a lot fun facts and new knowledge of this ancient species. The experience dispeled some myths about sharks that I always had when heard the word "shark". For example, sharks are not man-eaters by default. It turns out that the fear or even disguest impression that I had for sharks are mainly fueled by stereotypes,  exaggerated stories and unduly sensationalized portrayal in films and TV works. But, in fact, they are not. Thanks to my visits to these museums, which inspired me to start work on a educational game to help dispel the lables attached on the sharks, the dangerous, indiscriminate killers that eat anything in sight. </p>
-                        
-                        <h2>Research and Inspirations</h2>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/4sdkizknz0zke99/man_eater.jpg?raw=1">
-                            <figcaption class="figure-caption">Digital shark game: Man eater, image credit: PlayStation Blog</figcaption>
-                        </figure>
-                        <figure class="figure"><img class="figure-img" style="width: 95%; height:auto;" src="https://www.dropbox.com/s/jjrwu2fj4ijhjos/hungry_sharks.jpg?raw=1">
-                            <figcaption class="figure-caption">Digital shark game: Hungry sharks</figcaption>
-                        </figure>   
-                        <p>I wished to build a game providing more joyful experience to diminish the scary impression people tend to have when they think of sharks.</p>                     
+<h2 id="process">02 · Process</h2>
+<h3>Research and inspiration</h3>
+<p>The concept drew on museum visits and educational material from the <a href="https://www.amnh.org/exhibitions/sharks">American Museum of Natural History</a>, <a href="https://nyaquarium.com/things-to-do/exhibits/ocean-wonders-sharks">New York Aquarium</a> and <a href="https://ocean.si.edu/ocean-life/sharks-rays">Smithsonian Ocean</a>. These references introduced me to the diversity of sharks and their role in marine ecosystems, which became the starting point for the game’s content.</p>
+<p>I also considered how sharks are represented in games such as <a href="https://blog.playstation.com/2020/05/21/maneater-swims-onto-ps4-tomorrow/">Maneater</a> and <a href="https://www.ubisoft.com/en-gb/games/hungry-shark-world">Hungry Shark World</a>. Their focus on action and feeding helped me clarify a different direction for Sharks: a relaxed experience where learning something new is the main reward. This comparison informed the concept; understanding how players respond to it will require user research.</p>
+<h3>Building the experience around discovery</h3>
+<p>I organized the experience around a simple sequence: choose a shark, explore, discover a fact and continue. The three characters share the same controls, allowing players to choose one they like without comparing abilities. A field guide gives them a more direct way to revisit what they have learned.</p>
+<ol class="sharks-flow" aria-label="Player journey"><li>Choose</li><li>Explore</li><li>Discover</li><li>Read</li><li>Return or revisit</li></ol>
+<h3 id="wireframes">Wireframes and information hierarchy</h3>
+<p>Each screen has a different role. Character selection introduces the controls, the ocean view helps players stay oriented, and the fact card gives them space to read. These simplified layouts show how I prioritized information in each part of the journey.</p>
+<p class="sharks-table-note"><strong>About these wireframes:</strong> I created them for this case study to explain the refined layouts. They are retrospective diagrams, not sketches from the original design process.</p>
+<div class="sharks-wireframes" aria-label="Low-fidelity layouts for character selection, exploration and reading">
+<figure><div class="wire-screen"><strong>Pick a companion</strong><div class="wire-box">How to play<br>Move · discover · revisit</div><div class="wire-choices"><span>Bob</span><span>Jack</span><span>Lucy</span></div><div class="wire-action">Choose a shark</div></div><figcaption>1. Introduce the controls before asking players to choose a character.</figcaption></figure>
+<figure><div class="wire-screen"><div class="wire-bar">Discoveries <span>Sound</span></div><div class="wire-ocean"><span>YOU<br>◇ Shark</span><small>○ Bubble →</small></div><div class="wire-box">Move · Field guide · Spin</div></div><figcaption>2. Reserve the central area for the shark, with progress and controls at the edges.</figcaption></figure>
+<figure><div class="wire-screen"><div class="wire-bar">World paused <span>×</span></div><div class="wire-reading"><strong>One fact title</strong><span>One short paragraph.<br>Room to read.</span><div class="wire-box">Found · bubble becomes flag</div></div><div class="wire-action">Keep exploring</div></div><figcaption>3. Focus the card on one fact and a clear return to exploration.</figcaption></figure>
+</div>
+<h3>Refining the playable prototype</h3>
+<p>Working with a playable prototype helped connect the screen designs to movement and feedback. I refined how the shark responds to input, how facts open and close, and how discoveries are remembered. Automated browser checks covered these interactions on desktop and emulated phone layouts.</p>
+<p>The checks confirmed that the interactions behaved as expected. The next step is to observe first-time players and see whether the controls and feedback make sense without explanation.</p>
 
-                        
+<h2 id="solution">03 · Solution</h2>
+<h3 id="refinement">1. Helping players stay oriented</h3>
+<p><strong>The problem:</strong> on smaller screens, the character could be difficult to find. <strong>The change:</strong> the camera follows the shark, its size adjusts to the available screen space, and a YOU label distinguishes it from other creatures. The layout also leaves room for the header and controls.</p>
+<p>I removed the extra circles around characters and objects to keep the ocean visually uncluttered. Camera tracking and the label provide the guidance instead. Rotating the phone also resets movement input, giving players a stable starting point in the new orientation.</p>
+<h3 id="interaction">2. Making room for reading</h3>
+<p>I separated actions that had been competing with one another. Dragging moves the shark, while a dedicated button handles spinning. When a fact opens, the ocean pauses and movement input is cleared. Players can then read without worrying about where their character is going.</p>
+<div class="sharks-screen-pair"><figure class="figure "><img class="figure-img" src="/assets/img/sharks_new/exploration.png" width="585" height="1266" alt="Mobile ocean screen with a YOU label above the shark" loading="lazy" decoding="async"><figcaption class="figure-caption">The ocean view keeps the shark in focus while leaving controls within reach.</figcaption></figure><figure class="figure "><img class="figure-img" src="/assets/img/sharks_new/fact.png" width="585" height="1266" alt="Mobile fact card with a title, paragraph, Found message and return button" loading="lazy" decoding="async"><figcaption class="figure-caption">The fact card creates a quiet reading moment with a clear way to continue.</figcaption></figure></div>
+<p>Touching a bubble opens its fact immediately, connecting the encounter to a moment of learning. Because this interrupts swimming, I kept the card brief and easy to close. In usability testing, I would explore whether players prefer this immediate response or an option to open the fact themselves.</p>
+<h3>3. Giving discoveries a lasting place</h3>
+<p>I wanted players to recognize a discovery after closing its card. A found bubble becomes a flag, and the Found message explains that they can return to read it again. The discovery count and field guide keep track of the same collection, so revisiting a fact does not add to the total.</p>
+<p class="sharks-table-note">On small screens, swipe to read all columns. You can also focus the table and use arrow keys.</p><div class="sharks-table-wrap" role="region" aria-labelledby="interaction-decisions" tabindex="0"><table class="sharks-decision-table"><caption id="interaction-decisions">How the other interactions support exploration</caption><thead><tr><th scope="col">Interaction</th><th scope="col">Design choice</th><th scope="col">Reason</th></tr></thead><tbody><tr><th scope="row">Character selection</th><td>Show each character’s name and selection action, with instructions above the cards.</td><td>Players can understand their choices on both touch and desktop screens, without hovering.</td></tr><tr><th scope="row">Movement and spin</th><td>Hold to swim and release to stop, with a separate button for spinning.</td><td>Movement stays predictable, and a drag does not unexpectedly trigger a spin.</td></tr><tr><th scope="row">Jellyfish and seals</th><td>Bounce the shark back with a playful message and a short pause before another prompt.</td><td>Players can understand the encounter without being penalized or overwhelmed by repeated messages.</td></tr><tr><th scope="row">Small fish</th><td>Show a snack message when a fish is eaten, then let it return elsewhere later.</td><td>Small encounters give the ocean life while facts remain the main reason to explore.</td></tr><tr><th scope="row">Music</th><td>Keep music playing during facts and provide a visible mute control.</td><td>The atmosphere continues through reading, while players can choose silence. Some browsers require a tap to start audio.</td></tr><tr><th scope="row">Completion</th><td>Show congratulations after the last fact is closed, with an option to keep exploring.</td><td>Players have time to finish reading and can decide when their journey is over.</td></tr></tbody></table></div>
+<h3 id="visual-design">A consistent visual language</h3>
+<p>The shark and assets illustrations set a playful tone. I carried that into the interface through an ocean-blue background and warm yellow actions, with pale surfaces and dark text for easy reading.</p>
+<div class="sharks-palette" aria-label="Game interface color roles"><span><i style="background:#005eb8"></i>Ocean<br>#005EB8</span><span><i style="background:#f5f9f7"></i>Reading surface<br>#F5F9F7</span><span><i style="background:#103c51"></i>Text<br>#103C51</span><span><i style="background:#ffde86"></i>Primary action<br>#FFDE86</span></div>
+<p><strong>Content hierarchy:</strong> each fact card follows the same order: title, short explanation, discovery status and return action. <strong>Reusable components:</strong> character cards and buttons use consistent spacing and visual treatment. <strong>Interface language:</strong> “fluffy white bubbles” connects instructions to the artwork, while “Found” explains progress. <strong>Interaction states:</strong> visible keyboard focus and scrollable cards help the interface work across input methods and screen sizes.</p>
+<figure class="figure "><img class="figure-img" src="/assets/img/sharks_new/characters.png" width="2049" height="1451" alt="Three shark selection cards below the How to play instructions" loading="lazy" decoding="async"><figcaption class="figure-caption">A shared card layout gives each character the same visual weight and keeps the selection action easy to find.</figcaption></figure>
+<h3 id="engineering">Bringing the interactions into code</h3>
+<p>Contributing to the code helped me work through details that a static layout could not show: what happens when a finger lifts, the screen rotates or a player returns to a saved game. These details became part of the interaction design.</p>
+<p class="sharks-table-note">On small screens, swipe to read all columns. You can also focus the table and use arrow keys.</p><div class="sharks-table-wrap" role="region" aria-labelledby="engineering-decisions" tabindex="0"><table class="sharks-decision-table"><caption id="engineering-decisions">Connecting player needs to implementation</caption><thead><tr><th scope="col">Player need</th><th scope="col">Implementation</th><th scope="col">What this supports</th></tr></thead><tbody><tr><th scope="row">Stay oriented</th><td>Update the camera from the shark’s current position and adjust its size to the viewport.</td><td>A character that stays visible as players move or rotate their device.</td></tr><tr><th scope="row">Stop when I let go</th><td>Clear movement when input ends or the window loses focus, and pause the ocean while a fact is open.</td><td>Predictable stopping and a stable return from reading.</td></tr><tr><th scope="row">Keep my discoveries</th><td>Store unique fact IDs, ignore duplicates and handle unavailable browser storage.</td><td>An accurate collection count and continued play even when saving is unavailable.</td></tr></tbody></table></div>
+<p>The ocean is built with p5.js and p5.play, while menus and fact cards use HTML and CSS. Keeping the reading interface separate from the canvas makes text layout and scrolling easier to manage as the camera moves. Discoveries are saved in the browser; cross-device progress is outside the current scope.</p>
 
-                        <h2>Visual deisgn</h2>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/fws72az33saoa7x/assets01.png?raw=1">
-                            <figcaption class="figure-caption">assets</figcaption>
-                        </figure>
-                        <figure class="figure"><img class="figure-img" src="https://www.dropbox.com/s/ih64cyd82yxmuhe/assets02.png?raw=1">
-                            <figcaption class="figure-caption">assets</figcaption>
-                        </figure>
+<h2 id="outcome">04 · Outcomes and next steps</h2>
+<p>The refined prototype brings character selection, exploration, reading and completion into one continuous experience. Browser checks covered all three characters at four viewport sizes—320 × 568, 390 × 844, 844 × 390 and 1366 × 768—using desktop Edge with phone emulation.</p>
+<p class="sharks-table-note">On small screens, swipe to read all columns. You can also focus the table and use arrow keys.</p><div class="sharks-table-wrap" role="region" aria-labelledby="outcomes-evidence" tabindex="0"><table class="sharks-decision-table"><caption id="outcomes-evidence">What has been checked and what needs further testing</caption><thead><tr><th scope="col">Design goal</th><th scope="col">Browser-check result</th><th scope="col">Question for usability testing</th></tr></thead><tbody><tr><th scope="row">Keep the shark in view</th><td>The shark stayed within the usable area in the tested portrait, landscape and desktop layouts.</td><td>Can a first-time player find and follow their shark without help?</td></tr><tr><th scope="row">Read without losing control</th><td>The world paused during facts, and input stopped correctly on release and dismissal.</td><td>Does opening a fact automatically feel like a discovery or an interruption?</td></tr><tr><th scope="row">Return to discoveries</th><td>Discoveries remained saved, and revisiting a flag did not increase the count.</td><td>Do players understand the flags and find the field guide on their own?</td></tr></tbody></table></div>
+<p>These results confirm the tested behavior. Task success, player feedback and learning outcomes still need to be evaluated with participants.</p>
+<!-- <h3>What I would test next</h3>
+<p>I would start with a short session asking new players to choose a shark, find a fact, return to it and continue after an encounter. I would observe where they hesitate or need help, how long it takes to reach the first discovery, and whether their actions match what they intended. Asking what a flag means before explaining it would help assess whether the progress cues are clear.</p>
+<p>Those observations would guide the next iteration. I would also test on physical iPhone and Android devices and in Safari, and review text scaling, contrast, reduced motion and access to the spatial game with assistive technology.</p> -->
+<h3>What I learned</h3>
+<p>This project helped me see how closely visual clarity depends on interaction behavior. A readable fact card still needs a reliable way back to the game; a progress marker needs to make sense after its message disappears. Working on both the design and code helped me follow those decisions through the whole experience.</p>
+<h3 id="credits">Credits and project links</h3>
+<p>Esther Zhang: game concept, UI/UX, interaction design, visual details and coding contribution. Baihan Lin: project collaborator. Tools: HTML, CSS, JavaScript, p5.js and p5.play.</p>
+
+
+
+
+<p><a href="https://meetsharks.com/">Play Sharks</a> · <a href="https://github.com/datacomma/meetsharks">View the project code</a>. Educational references also include <a href="https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you">NOAA Fisheries</a> and the <a href="https://www.floridamuseum.ufl.edu/discover-fish/sharks/shark-biology/">Florida Museum</a>.</p>
 
                     </div>
                 </div>
