@@ -126,3 +126,6 @@
   }
 }
 
+.rig-row { width: min(100%, 1400px); margin: 2rem auto; }
+.rig-column { min-width: 0; }
+.rig-column img { height: auto; }

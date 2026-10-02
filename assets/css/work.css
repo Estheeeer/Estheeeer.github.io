@@ -4,7 +4,7 @@
     --oswald-cursive-family:'Oswald', cursive;
     --monoton-cursive-family:'Monoton', cursive;
     --apple-system-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,"Sans Serif",Icons;
-    
+
     /* color */
     --category-color:#7d8285;
     --title-color:#000;
@@ -15,10 +15,10 @@
 .all-projects {
     box-sizing: border-box;
     background-color: var(--section-bg-color);
-    margin-top: 2rem; 
+    margin-top: 2rem;
     /* width:70%; */
     margin-left: 25vw;
-    margin-right: 0vw;   
+    margin-right: 0vw;
 }
 
 .col {
@@ -29,13 +29,13 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-  
+
 .row-projects:after {
     content: "";
     display: table;
     clear: both;
 }
-  
+
 @media (max-width: 767px) {
   .col {
       width: 80%;
@@ -52,8 +52,8 @@
     float: right;
 }
 
-.project-tag { 
-  margin-bottom: 0.7rem; 
+.project-tag {
+  margin-bottom: 0.7rem;
   text-align: left;
 }
 
@@ -61,16 +61,16 @@
     color: var(--category-color);
     font-family:var(--oswald-cursive-family);
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     text-align: left;
 }
-  
+
 .all-projects h3 {
     font-weight: 250;
     font-size: calc(4px + 1vw);
     color: inherit;
 }
-  
+
 .all-projects .name {
   font-size:18px;
   font-weight: 250;
@@ -88,17 +88,25 @@
   font-family:'Oswald', cursive;
   font-weight: 100;
 }
-  
+
 .img-fluid {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    -webkit-transition: all 1s ease; 
+    -webkit-transition: all 1s ease;
 }
-    
+
 .img-fluid:hover{
     filter: grayscale(0%);
     filter: gray;
     -webkit-filter: grayscale(0%);
     filter: none;
     transition: 1s ease;
-}
+}/* Keep image and description proportions stable as the viewport changes. */
+.all-projects { width: min(100% - 2.5rem, 1000px); margin: 2rem auto; }
+.all-projects .container { width: 100%; max-width: none; padding: 0; }
+.row-projects { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin-bottom: 2.5rem; }
+.row-projects::after { display: none; }
+.all-projects .col { float: none; width: auto; min-width: 0; padding: 0; }
+.row-projects img { display: block; float: none; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: #efefef; }
+@media (max-width: 767px) { .row-projects { grid-template-columns: minmax(0, 1fr); gap: 1rem; } }
+@media (hover: none) { .all-projects .img-fluid { filter: none; -webkit-filter: none; } }

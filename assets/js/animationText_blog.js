@@ -1,5 +1,5 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['ITP ITP ITP', 'Keep blogging', 'Emmmmm...', 'my daily life bits'], 'text',['Turquoise', 'MediumSeaGreen', 'RoyalBlue', 'SandyBrown']);
+// function([string1, string2],target id,[color1,color2])
+consoleText(['ITP ITP ITP', 'Keep blogging', 'Emmmmm...', 'my daily life bits'], 'text',['#306c79', '#426c50', '#425e87', '#826044']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -8,9 +8,17 @@ function consoleText(words, id, colors) {
   var letterCount = 1;
   var x = 1;
   var waiting = false;
-  var target = document.getElementById(id)
+  var target = document.getElementById(id);
+  if (!target || !con) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    target.textContent = words[0];
+    target.style.color = '#306c79';
+    con.hidden = true;
+    return;
+  }
   target.setAttribute('style', 'color:' + colors[0])
   window.setInterval(function() {
+    if (document.hidden) return;
 
     if (letterCount === 0 && waiting === false) {
       waiting = true;
@@ -39,6 +47,7 @@ function consoleText(words, id, colors) {
   }, 80)
 
   window.setInterval(function() {
+    if (document.hidden) return;
     if (visible === true) {
       con.className = 'text-underscore hidden'
       visible = false;

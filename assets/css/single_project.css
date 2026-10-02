@@ -97,9 +97,9 @@
   margin-top: 30px;
   margin-bottom: 20px;
   /* center the 100%width figur */
-  display: block;  
-  margin-left: auto;  
-  margin-right: auto;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .article-dual-column .text figure img {
@@ -160,4 +160,9 @@
 
 .article-dual-column .toc a {
   color: inherit;
-}
+}/* Embedded videos scale with the article column instead of overflowing phones. */
+.article-dual-column iframe { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
+.article-dual-column .text { min-width: 0; overflow-wrap: anywhere; }
+.article-dual-column .text img { height: auto; }
+@media (max-width: 767px) { .article-dual-column p { width: auto; } }
+.article-dual-column video { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; }

@@ -1,0 +1,282 @@
+[
+  {
+    "page": "work.html",
+    "url": "https://www.dropbox.com/s/g0jy1zzcmgd29c3/thesis_thumb_original.jpg?raw=1",
+    "stem": "project-1",
+    "bytes": 379670,
+    "variants": [
+      {
+        "file": "assets/img/optimized/project-1-480.webp",
+        "width": 480,
+        "height": 269,
+        "bytes": 11396
+      },
+      {
+        "file": "assets/img/optimized/project-1-960.webp",
+        "width": 960,
+        "height": 538,
+        "bytes": 27524
+      }
+    ]
+  },
+  {
+    "page": "work.html",
+    "url": "https://www.dropbox.com/s/hidrkqzvw7v03u0/light_wave_springshow_thumbimg.jpg?raw=1",
+    "stem": "project-2",
+    "bytes": 8365103,
+    "variants": [
+      {
+        "file": "assets/img/optimized/project-2-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 39492
+      },
+      {
+        "file": "assets/img/optimized/project-2-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 168468
+      }
+    ]
+  },
+  {
+    "page": "work.html",
+    "url": "https://www.dropbox.com/s/w9idp10hape20pq/disequilibrium_room.jpg?raw=1",
+    "stem": "project-3",
+    "bytes": 2674608,
+    "variants": [
+      {
+        "file": "assets/img/optimized/project-3-480.webp",
+        "width": 480,
+        "height": 266,
+        "bytes": 21344
+      },
+      {
+        "file": "assets/img/optimized/project-3-960.webp",
+        "width": 960,
+        "height": 533,
+        "bytes": 61140
+      }
+    ]
+  },
+  {
+    "page": "work.html",
+    "url": "https://www.dropbox.com/s/7gkpwm4qx1n5uwx/jellyfish.gif?raw=1",
+    "stem": "project-4",
+    "bytes": 437036,
+    "variants": [
+      {
+        "file": "assets/img/optimized/project-4-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 1426
+      },
+      {
+        "file": "assets/img/optimized/project-4-960.webp",
+        "width": 780,
+        "height": 780,
+        "bytes": 2694
+      }
+    ]
+  },
+  {
+    "page": "work.html",
+    "url": "https://www.dropbox.com/s/wuhi7mw2hlj5f8u/scrolling_text.gif?raw=1",
+    "stem": "project-5",
+    "bytes": 544379,
+    "variants": [
+      {
+        "file": "assets/img/optimized/project-5-480.webp",
+        "width": 480,
+        "height": 379,
+        "bytes": 2984
+      },
+      {
+        "file": "assets/img/optimized/project-5-960.webp",
+        "width": 960,
+        "height": 759,
+        "bytes": 5590
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/bqbuyk1ptowmms4/White_Sculpture.jpg?raw=1",
+    "stem": "photo-1",
+    "bytes": 334949,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-1-600.webp",
+        "width": 600,
+        "height": 403,
+        "bytes": 10772
+      },
+      {
+        "file": "assets/img/optimized/photo-1-1200.webp",
+        "width": 1200,
+        "height": 806,
+        "bytes": 34836
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/1ci7k65mkyh5hed/washington_park_girls.jpg?raw=1",
+    "stem": "photo-2",
+    "bytes": 5151161,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-2-600.webp",
+        "width": 600,
+        "height": 398,
+        "bytes": 65428
+      },
+      {
+        "file": "assets/img/optimized/photo-2-1200.webp",
+        "width": 1200,
+        "height": 796,
+        "bytes": 263724
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/95varuqz7bfcpoz/A_Break.jpg?raw=1",
+    "stem": "photo-3",
+    "bytes": 581192,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-3-600.webp",
+        "width": 600,
+        "height": 403,
+        "bytes": 38918
+      },
+      {
+        "file": "assets/img/optimized/photo-3-1200.webp",
+        "width": 1200,
+        "height": 805,
+        "bytes": 126700
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/tzb5c2x0u5imclr/family_under_sculpture.jpg?raw=1",
+    "stem": "photo-4",
+    "bytes": 27202342,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-4-600.webp",
+        "width": 600,
+        "height": 398,
+        "bytes": 41572
+      },
+      {
+        "file": "assets/img/optimized/photo-4-1200.webp",
+        "width": 1200,
+        "height": 796,
+        "bytes": 171606
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/r2moijv99z89mug/90_Wall_St.jpg?raw=1",
+    "stem": "photo-5",
+    "bytes": 533690,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-5-600.webp",
+        "width": 600,
+        "height": 403,
+        "bytes": 23960
+      },
+      {
+        "file": "assets/img/optimized/photo-5-1200.webp",
+        "width": 1200,
+        "height": 805,
+        "bytes": 101882
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/crju0ft5xo9t1iw/black_hole.jpg?raw=1",
+    "stem": "photo-6",
+    "bytes": 1507098,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-6-600.webp",
+        "width": 600,
+        "height": 398,
+        "bytes": 5592
+      },
+      {
+        "file": "assets/img/optimized/photo-6-1200.webp",
+        "width": 1200,
+        "height": 796,
+        "bytes": 35650
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/565n52bbfhviwqw/skating_boy.jpg?raw=1",
+    "stem": "photo-7",
+    "bytes": 302433,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-7-600.webp",
+        "width": 600,
+        "height": 409,
+        "bytes": 40868
+      },
+      {
+        "file": "assets/img/optimized/photo-7-1200.webp",
+        "width": 1024,
+        "height": 698,
+        "bytes": 122140
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/immwk3qtyk8jonf/Eternity.jpg?raw=1",
+    "stem": "photo-8",
+    "bytes": 691309,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-8-600.webp",
+        "width": 600,
+        "height": 425,
+        "bytes": 51182
+      },
+      {
+        "file": "assets/img/optimized/photo-8-1200.webp",
+        "width": 1200,
+        "height": 850,
+        "bytes": 195748
+      }
+    ]
+  },
+  {
+    "page": "photography.html",
+    "url": "https://www.dropbox.com/s/p8238qlc63m1g4v/Blend.jpg?raw=1",
+    "stem": "photo-9",
+    "bytes": 617052,
+    "variants": [
+      {
+        "file": "assets/img/optimized/photo-9-600.webp",
+        "width": 600,
+        "height": 403,
+        "bytes": 50992
+      },
+      {
+        "file": "assets/img/optimized/photo-9-1200.webp",
+        "width": 1200,
+        "height": 805,
+        "bytes": 163978
+      }
+    ]
+  }
+]
