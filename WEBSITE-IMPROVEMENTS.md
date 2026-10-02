@@ -12,9 +12,10 @@ a mainly professional tone with some warmth. It retains your engineering and
 ITP education, research and industry experience, interest in health, education
 and care, and photography and fabrication practice. It adds no new credentials.
 
-A clear greeting, shorter paragraphs, a readable body font, and direct links to
-Work and email make the page easier to scan. Oswald remains for headings and
-navigation; Monoton remains on the homepage.
+A clear greeting, shorter paragraphs, and direct links to Work and email make
+the page easier to scan. Following your feedback, the original Oswald font is
+used for the About body, headings, captions, and navigation. Monoton remains on
+the homepage.
 
 ## How the layout was fixed
 
@@ -27,13 +28,14 @@ The About layout now uses a centered, capped grid:
 ```css
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, min(40vw, 360px)) minmax(0, 1fr);
   gap: clamp(2rem, 6vw, 5rem);
 }
 ```
 
 At widths below 768px, the grid becomes one column. The photograph uses
-`width: 100%` and `height: auto`, preserving its original proportions. Text stays
+`width: 100%` and `height: auto`, preserving its original proportions. On larger
+screens it is capped at 40% of the viewport width and 360px. Text stays
 at a readable size instead of shrinking with the window. The Work list uses the
 same grid principle, with consistent cropped thumbnail frames.
 

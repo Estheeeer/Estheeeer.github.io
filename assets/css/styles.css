@@ -15,13 +15,13 @@ img { max-width: 100%; }
 .text-underscore.hidden { visibility: hidden; }
 #email { font-family: 'Oswald', Arial, sans-serif; font-weight: 300; }
 .about-page .main-intro-body { width: min(100% - 3rem, 1120px); margin: clamp(2rem, 5vw, 4.5rem) auto; }
-.about-page .about-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
-.about-page .portrait { margin: 0; }
+.about-page .about-grid { display: grid; grid-template-columns: minmax(0, min(40vw, 360px)) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.about-page .portrait { margin: 0; width: 100%; max-width: min(40vw, 360px); }
 .about-page #profile-image { display: block; width: 100%; height: auto; aspect-ratio: 2000 / 1516; background: #f1eee9; }
-.about-page .portrait figcaption { margin-top: .8rem; font: .8rem/1.5 Arial, sans-serif; color: #666; }
+.about-page .portrait figcaption { margin-top: .8rem; font: 300 .8rem/1.5 'Oswald', Arial, sans-serif; color: #666; }
 .about-page #introduction .eyebrow { margin: 0 0 1rem; font: 400 .8rem/1.4 'Oswald', Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #686868; }
 .about-page h1 { margin: 0 0 1.5rem; font: 400 clamp(2.2rem, 4vw, 3.5rem)/1.1 'Oswald', Arial, sans-serif; letter-spacing: -.025em; }
-.about-page #introduction { min-width: 0; font: 400 1rem/1.8 -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+.about-page #introduction { min-width: 0; font: 300 1rem/1.65 'Oswald', Arial, sans-serif; letter-spacing: .02rem; word-spacing: .09rem; }
 .about-page #introduction p { margin: 0 0 1.2rem; }
 .about-page .about-links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.8rem; }
 .about-page .about-links a { color: #222; text-underline-offset: .3em; }
@@ -30,7 +30,7 @@ a:focus-visible, [role='button']:focus-visible, button:focus-visible { outline: 
 @media (max-width: 767px) {
   .about-page .main-intro-body { width: calc(100% - 2.5rem); margin-top: 2rem; }
   .about-page .about-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
-  .about-page .portrait { width: min(100%, 32rem); }
+  .about-page .portrait { width: 100%; max-width: 360px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
