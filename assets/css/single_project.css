@@ -166,3 +166,37 @@
 .article-dual-column .text img { height: auto; }
 @media (max-width: 767px) { .article-dual-column p { width: auto; } }
 .article-dual-column video { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; }
+
+/* Light Wave: separate the artistic question, reasoning, and reflection. */
+.light-wave-page .article-dual-column,
+.light-wave-page .article-dual-column p { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+.light-wave-page { background-color: #fff; }
+.light-wave-page .article-dual-column { color: #56585b; }
+.light-wave-page .article-dual-column h1,
+.light-wave-page .article-dual-column h2,
+.light-wave-page .article-dual-column h3,
+.light-wave-page .article-dual-column p,
+.light-wave-page .article-dual-column li,
+.light-wave-page .article-dual-column figcaption,
+.light-wave-page .article-dual-column .project-question,
+.light-wave-page .article-dual-column .project-medium { color: #56585b; }
+.light-wave-page .intro h1 { margin: 25px 0 15px; padding-top: 20px; font-size: 2rem; font-weight: 300; line-height: 1.3; color: #222; }
+.light-wave-page .text section { scroll-margin-top: 1.5rem; }
+.light-wave-page .text h2 { margin-top: 2.5rem; font-size: 1.3rem; }
+.light-wave-page .text h3 { margin: 1.5rem 0 .75rem; font-size: 1rem; font-weight: 300; color: #333; }
+.light-wave-page .text p { line-height: 1.75; word-spacing: normal; font-weight: 300; }
+.light-wave-page .text .project-question { border-left: 2px solid #687d82; padding: .5rem 0 .5rem 1rem; font-size: 1.15rem; color: #333; }
+.light-wave-page .text .light-wave-hero { margin-top: 0; }
+.light-wave-page .text .exhibition-conversation { width: min(100%, 420px); }
+.light-wave-page .figure { width: 100%; }
+.light-wave-page .figure-img { display: block; width: 100%; height: auto; }
+.light-wave-page .figure-caption { margin-top: .5rem; font-size: .8rem; line-height: 1.5; text-align: left; }
+.light-wave-page .reflection-questions { padding-left: 1.25rem; line-height: 1.75; }
+.light-wave-page .reflection-questions li { margin-bottom: .65rem; }
+.light-wave-page .toc .project-medium { margin-top: 1.5rem; padding-top: 0; line-height: 1.75; text-transform: none; color: #666; }
+.light-wave-page .toc li,
+.light-wave-page .toc li a {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}

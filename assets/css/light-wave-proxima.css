@@ -1,0 +1,20 @@
+/* Preview the supplied Proxima Soft Regular file at its actual weight. */
+@font-face {
+  font-family: 'proxima-soft';
+  src: url('../fonts/Proxima%20Soft%20Regular/Proxima%20Soft%20Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.light-wave-page .article-dual-column,
+.light-wave-page .article-dual-column p,
+.light-wave-page .article-dual-column h1,
+.light-wave-page .article-dual-column h2,
+.light-wave-page .article-dual-column h3,
+.light-wave-page .article-dual-column li,
+.light-wave-page .article-dual-column figcaption {
+  font-family: 'proxima-soft', 'Oswald', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
