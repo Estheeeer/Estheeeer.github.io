@@ -110,3 +110,9 @@
 .row-projects img { display: block; float: none; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: #efefef; }
 @media (max-width: 767px) { .row-projects { grid-template-columns: minmax(0, 1fr); gap: 1rem; } }
 @media (hover: none) { .all-projects .img-fluid { filter: none; -webkit-filter: none; } }
+
+/* A concise introduction to the decisions behind the selected work. */
+.work-introduction { max-width: 720px; margin: 1rem 0 3.5rem; }
+.work-introduction h1 { font-family: var(--oswald-sans-family); font-size: clamp(28px, 4vw, 42px); font-weight: 400; line-height: 1.2; margin: 0 0 1.2rem; }
+.work-introduction p { font-family: var(--apple-system-font-family); font-size: 17px; line-height: 1.7; color: #444; }
+.all-projects .description { font-family: var(--apple-system-font-family); font-weight: 400; font-size: 15px; line-height: 1.65; color: #555; }
